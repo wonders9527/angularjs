@@ -16,7 +16,7 @@ define(['MyApp'], function(MyApp) {
 				}
 			},
 			function errorCallback(err) {
-				console.log(err);
+				console.log('err'+err);
 			});
 	}];
 
