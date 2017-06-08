@@ -13,10 +13,12 @@
     "express": "~4.15.2",
     "morgan": "~1.8.1",
     "serve-favicon": "~2.4.2",
-    "mysql":"latest",
-    "express-session":"latest"
+    "mysql": "latest",
+    "express-session": "latest"
   },
   "devDependencies": {
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.0.1"
   }
 }
