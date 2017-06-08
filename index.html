@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-controller="indexCtrl">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title ng-bind="Title"></title>
+		<script type="text/javascript" src="public/js/configs/require.min.js" data-main="public/main"></script>
+		<link rel="stylesheet" href="public/js/framework/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="public/css/styles.css"/>
+	</head>
+
+	<body ng-cloak>
+		<div ng-hide="loginHide">
+			<nav id="top-nav">
+				<ul class="nav nav-pills">
+					<li><a class="active" href="#/">首页</a></li>
+					<li><a href="#/rec">推荐</a></li>
+					<li><a href="#/newest">最新</a></li>
+                	
+					<ul id="loginShow" class="nav navbar-right" ng-hide="isHide">
+						<li class="dropdown">
+	                		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    		<span class="glyphicon glyphicon-list"></span>
+	                		</a>
+	                		<ul id="downmenu" class="dropdown-menu" style="width: 20px;">
+	                			<li><a href="#/login"><span class="glyphicon glyphicon-user"></span>登录</a></li>
+								<li><a href="#/reg"><span class="glyphicon glyphicon-log-in"></span>注册</a></li>
+		                	</ul>
+                		</li>
+					</ul>
+					<ul id="logoutShow" class="nav nav-pills navbar-right" ng-show="isShow">
+						<li><a><span class="glyphicon" ng-bind="loginUser"></span></a></li>
+						<li><a href="#/logout"><span class="glyphicon glyphicon-log-out"></span>退出</a></li>
+					</ul>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="page" ng-view></div>
+	</body>
+
+</html>

@@ -1,0 +1,61 @@
+/*@media screen and (max-width: 500px) {
+	body {
+		background-color: lightblue;
+	}
+}*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+/*
+ * 导航css
+ */
+#top-nav {
+	width: 100%;
+	height: 5%;
+	margin: 0 auto;
+	font-size: 20px;
+	position: relative;
+}
+
+#loginShow{
+	float: right;
+	margin-right: 15px;
+}
+
+#downmenu{
+	min-width: 65px;
+	height: auto;
+}
+
+#downmenu>li>a{
+	padding: 1px 1px;
+	min-width: 20px;
+}
+
+#logoutShow{
+	float: right;
+	margin-right: 5px;
+	font-size: small;
+}
+
+
+
+/*
+ * home css
+ */
+ul.row{
+	list-style-type:none;
+}
+
+.videosStyle{
+	width:100%;
+	height: auto;
+}
+/*
+ * login css
+ */
+#loginID{
+	margin-top: 30%;
+}
